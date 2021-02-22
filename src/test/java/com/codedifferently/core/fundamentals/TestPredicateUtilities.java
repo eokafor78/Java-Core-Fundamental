@@ -11,6 +11,7 @@ public class TestPredicateUtilities {
     @Test
     public void testReturnTrue(){
         // : Given
+        Boolean expected = true;
         // : When
         // : Then
         assertTrue(predicateUtilities.returnTrue());
@@ -19,6 +20,7 @@ public class TestPredicateUtilities {
     @Test
     public void testReturnFalse(){
         // : Given
+        Boolean expected = false;
         // : When
         // : Then
         assertFalse(predicateUtilities.returnFalse());
@@ -43,7 +45,7 @@ public class TestPredicateUtilities {
     public void testGreaterThanFalse() {
         // : Given
         int greaterValue = 350;
-        int lesserValue = 350;
+        int lesserValue = 450;
 
         // : When
         boolean outcome = predicateUtilities.isGreaterThan(greaterValue, lesserValue);
@@ -84,7 +86,7 @@ public class TestPredicateUtilities {
     @Test
     public void testLessOrEqualTrue() {
         // : Given
-        int greaterValue = 3;
+        int greaterValue = 2;
         int lesserValue = 3;
 
         // : When
@@ -97,7 +99,7 @@ public class TestPredicateUtilities {
     @Test
     public void testLessOrEqualFalse() {
         // : Given
-        int greaterValue = 3;
+        int greaterValue = 7;
         int lesserValue = 6;
 
         // : When
